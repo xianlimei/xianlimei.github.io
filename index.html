@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Xianlimei.GitHub.io by xianlimei</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Xianlimei.GitHub.io</h1>
+        <h2>李奕伟的博客</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/xianlimei" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>2017年底将至，正恰逢笔者的小棉袄出世，也是笔者对人生这段时间工作的总结，因此决定写点东西留作纪念。
+如有任何问题，可以联系我(<a href="mailto:liaixian1130@gmail.com">liaixian1130@gmail.com</a>，小棉袄小名:艾娴^_^)。欢迎技术交流，喷子勿扰了。文章中理论会提一部分，基本都是言简意赅，只说重点，完全以实战为主。</p>
+<p>这一期，分为9个章节，主要是从安全架构到安全产品落地来描述整个企业安全。安全研究的东西不包含在这里。（代码我会考虑上传到github，这个看时机）。一切转载，请都说明出处，谢谢。</p>
+<h1>
+<a id="1安全的规划" class="anchor" href="#1%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%84%E5%88%92" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1、安全的规划</h1>
+<p>现在安全规划也不是什么热门的话题，本人结合自己多年的安全经验，谈谈安全的规划与实践，所有项目都会给出源码与大家分享。其中安全都指的是生产网的安全，办公网的安全不涉及。</p>
+<p>我个人倾向把安全分为两个层面来看</p>
+<p>1）安全生命周期（安全生命周期与sdl有很大的不同，我下面会说，如果能有企业能实行sdl，我觉得要么就是安全公司，要么就是老板很重视安全了^_^）。</p>
+<p>2）纵深层面 老生常谈，没啥好说的。不废话。</p>
+<h2>
+<a id="11安全生命周期层面" class="anchor" href="#11%E5%AE%89%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%B1%82%E9%9D%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.1、安全生命周期层面</h2>
+<p><img src="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/1.png" alt="">
+<a href="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/1.png">https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/1.png</a>)</p>
+<p><img src="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/2.png" alt="">
+<a href="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/2.png">https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/2.png</a></p>
+<h2>
+<a id="12纵深层面" class="anchor" href="#12%E7%BA%B5%E6%B7%B1%E5%B1%82%E9%9D%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.2、纵深层面</h2>
+<p><img src="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/3.png" alt="">
+<a href="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/3.png">https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/3.png</a></p>
+<h2>
+<a id="13安全目标" class="anchor" href="#13%E5%AE%89%E5%85%A8%E7%9B%AE%E6%A0%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.3、安全目标</h2>
+<p><img src="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/4.png" alt="">
+<a href="https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/4.png">https://raw.githubusercontent.com/wiki/xianlimei/liaixian11030/4.png</a></p>
+<p>从安全的角度，只需要输入一个域名，就知道这个域名到目前为止，整个安全的生命周期。</p>
+<p>说实话，安全很多都需要制度来约束执行，有时候技术再牛逼也没办法做好安全。互联网这个以敏捷开发为主体思想的环境下，想实现传统的sdl难度太大了，所以我另辟蹊径这样做sdl，以安全产品为导向布控在各个节点，由点到面的形成安全体系。
+下面8个章节，将逐一详细介绍上图中的安全基础产品的设计与实现（都是笔者设计开发^_^）。</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
